@@ -16,6 +16,7 @@ const babel = require('gulp-babel');
 const minimatch = require("minimatch");
 const notifier = require('node-notifier');
 const child_process = require('child_process');
+const pug = require('gulp-pug');
 
 const options = {
 	src:"src",
@@ -28,6 +29,7 @@ const options = {
 gulp.task('build', ()=>{
 	gulp.start('js');
 	gulp.start('copyStatic');
+	gulp.start('pug');
 });
 
 gulp.task('js', ()=>jsTask(options.jsEntry));
@@ -60,6 +62,15 @@ function jsTask(src,log=false){
     }))
 }
 
+// .pugm is a custom extension (short for pug main), to identify pug entry files from their extensions
+gulp.task("pug", ()=>pugTask("**/*.pugm"))
+function pugTask(src, logline=false){
+	if(logline) console.log("[run] copyTask")
+	return gulp.src(src, {cwd:options.src, base:options.src})
+  	.pipe(pug({locals:{}}).on('error', logNotifyErrorHandler))
+  	.pipe(gulp.dest(options.dest));
+}
+
 gulp.task('copyStatic', ()=>copy(options.staticFiles))
 function copy(src, logline=false){
 	if(logline) console.log("[run] copyTask")
@@ -81,6 +92,7 @@ gulp.task('watch', function(){
 		else if(multimatch(relativePath, options.jsEntry)) jsTask(relativePath, true);
 		// Otherwise, run task according to extension
 		else if([".js"].includes(extension)) gulp.start('js');
+		else if([".pugm"].includes(extension)) gulp.start('pug');
 		else if(multimatch(relativePath, options.staticFiles)) copy(relativePath);
 		// If all fails, notify.
 		else logNotify("[watch] There is no handler for this file: "+relativePath);
