@@ -7,6 +7,7 @@
     "node": "6.11.1"
   },
   "scripts": {
+    "postinstall": "cordova platform add android",
     "startServer": "node server/server.js",
     "start": "gulp && npm run cordovaRun",
     "cordovaBuild": "(cd cordovaWrap/ && ../node_modules/cordova/bin/cordova build android)",
