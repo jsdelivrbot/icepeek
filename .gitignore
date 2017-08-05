@@ -12,10 +12,8 @@ Dockerfile
 docker-compose.yml
 
 # cordova files
-/cordovaWrap/hooks
 /cordovaWrap/platforms/*/
 /cordovaWrap/plugins/*/
-/cordovaWrap/www
 
 /client/
 npm-debug.log
