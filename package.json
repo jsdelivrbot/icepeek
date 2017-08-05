@@ -1,5 +1,5 @@
 {
-  "name": "heroku_cordova_offline",
+  "name": "icepeek",
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
