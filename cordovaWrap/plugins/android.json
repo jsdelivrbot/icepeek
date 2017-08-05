@@ -8,15 +8,8 @@
     },
     "installed_plugins": {
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.bugInc.testApp"
-        },
-        "cordova-plugin-file": {
             "PACKAGE_NAME": "com.BUG.testApp"
         }
     },
-    "dependent_plugins": {
-        "cordova-plugin-compat": {
-            "PACKAGE_NAME": "com.BUG.testApp"
-        }
-    }
+    "dependent_plugins": {}
 }
