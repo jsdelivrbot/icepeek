@@ -23,8 +23,10 @@ const options = {
 	dest:"client",
 	jsEntry:"main.js",
 	devmode:true,
-	staticFiles:["*.html", "images/*"]
+	staticFiles:["*.html", "images/*", "style/*.css", "fonts/**/*"],
+	language:"FR" 
 }
+options.strings = require("./"+options.src+"/strings/"+options.language+".json")
 
 gulp.task('build', ()=>{
 	gulp.start('js');
@@ -66,8 +68,12 @@ function jsTask(src,log=false){
 gulp.task("pug", ()=>pugTask("**/*.pugm"))
 function pugTask(src, logline=false){
 	if(logline) console.log("[run] copyTask")
+	locals = {
+		strings:options.strings
+	}
+	console.log(locals)
 	return gulp.src(src, {cwd:options.src, base:options.src})
-  	.pipe(pug({locals:{}}).on('error', logNotifyErrorHandler))
+  	.pipe(pug({locals:locals}).on('error', logNotifyErrorHandler))
   	.pipe(gulp.dest(options.dest));
 }
 
@@ -94,6 +100,8 @@ gulp.task('watch', function(){
 		else if([".js"].includes(extension)) gulp.start('js');
 		else if([".pugm"].includes(extension)) gulp.start('pug');
 		else if(multimatch(relativePath, options.staticFiles)) copy(relativePath);
+		// if file is a strings file, recompile html sources
+		else if(relativePath.startsWith("strings/")) gulp.start('pug');
 		// If all fails, notify.
 		else logNotify("[watch] There is no handler for this file: "+relativePath);
 	})
