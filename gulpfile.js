@@ -96,9 +96,10 @@ gulp.task('watch', function(){
 		if(event.type === "deleted") del.sync(destPath, {force:true});
 		// If one of the entry points was modified, only rebuild that one
 		else if(multimatch(relativePath, options.jsEntry)) jsTask(relativePath, true);
+		else if([".pugm"].includes(extension)) pugTask(relativePath, true);
 		// Otherwise, run task according to extension
 		else if([".js"].includes(extension)) gulp.start('js');
-		else if([".pugm"].includes(extension)) gulp.start('pug');
+		else if([".pug"].includes(extension)) gulp.start('pug');
 		else if(multimatch(relativePath, options.staticFiles)) copy(relativePath);
 		// if file is a strings file, recompile html sources
 		else if(relativePath.startsWith("strings/")) gulp.start('pug');
