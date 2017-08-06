@@ -33,3 +33,13 @@ main #fbConnect{
     text-decoration: none;
     text-transform: none;
 }
+button{
+    border: none;
+    background-color: white;
+    font-size: 0.8em;
+    padding: 10px 15px;
+    border-radius: 100px;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+}

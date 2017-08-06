@@ -8,5 +8,6 @@ html(lang="en")
 		main
 			h1 icepeek
 			a(id="fbConnect" href="page2.html")= strings.fbConnectBtn
-
+			button(id="pitureSelectBtn") select picture
 		script(src="main.js")
+		script(src="cordova.js")
