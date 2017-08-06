@@ -1,4 +1,4 @@
-const clientMain = require("../../src/main");
+const clientMain = require("../../src/scripts/main");
 const assert = require('assert');
 
 describe('clientMain', function() {

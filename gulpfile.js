@@ -22,7 +22,7 @@ var fs = require('fs');
 const options = {
 	src:"src",
 	dest:"client",
-	jsEntry:"main.js",
+	jsEntry:"scripts/main.js",
 	devmode:true,
 	staticFiles:["*.html", "images/*", "style/*.css", "fonts/**/*"],
 	language:"FR" 
@@ -68,7 +68,7 @@ function jsTask(src,log=false){
 // .pugm is a custom extension (short for pug main), to identify pug entry files from their extensions
 gulp.task("pug", ()=>pugTask("**/*.pugm"))
 function pugTask(src, logline=false){
-	if(logline) console.log("[run] copyTask")
+	if(logline) console.log("[run] pugTask")
 	locals = {
 		strings:options.strings
 	}
