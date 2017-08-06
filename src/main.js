@@ -6,8 +6,7 @@ function getGreeting(){
 }
 
 if (typeof window !== 'undefined') {
-	console.log("fetch")
-	fetch("https://supermarche-monsieur-10270.herokuapp.com/test", {mode: 'cors'})
+	fetch("https://icepeek.herokuapp.com/test", {mode: 'cors'})
 	.then(r=>r.text())
 	.then(text=>alert(text))
 }

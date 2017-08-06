@@ -10,7 +10,7 @@ app.use(cors())
 app.use(express.static(appRoot + '/client'));
 
 app.get("/test", function(req, res) {
-	res.send("it works!");
+	res.send("connection to heroku server successfull!");
 });
 
 app.listen(port, function() {
