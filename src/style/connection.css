@@ -1,0 +1,35 @@
+@import url("../fonts/plaster/stylesheet.css");
+
+body{
+    background: url('http://lorempixel.com/output/abstract-q-c-640-480-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main{
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    text-transform: uppercase;
+}
+main h1{
+    font-family: "plasterregular";
+    color: white;
+    margin-bottom: 20vh;
+    text-align: center;
+}
+main #fbConnect{
+    border: none;
+    background-color: #3b5998;
+    padding: 20px;
+    border-radius: 100px;
+    color: white;
+    font-family: helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.8em;
+
+    /* if #fbConnect is a link, the following rules are needed to keep the styling right */
+    white-space: nowrap;
+    text-decoration: none;
+    text-transform: none;
+}
