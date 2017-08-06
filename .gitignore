@@ -17,3 +17,6 @@ docker-compose.yml
 
 /client/
 npm-debug.log
+
+# this file is a link created by npm install. no need to commit it
+cordovaCmd
