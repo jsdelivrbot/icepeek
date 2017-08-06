@@ -17,6 +17,7 @@ const minimatch = require("minimatch");
 const notifier = require('node-notifier');
 const child_process = require('child_process');
 const pug = require('gulp-pug');
+var fs = require('fs');
 
 const options = {
 	src:"src",
@@ -26,7 +27,7 @@ const options = {
 	staticFiles:["*.html", "images/*", "style/*.css", "fonts/**/*"],
 	language:"FR" 
 }
-options.strings = require("./"+options.src+"/strings/"+options.language+".json")
+reloadStrings()
 
 gulp.task('build', ()=>{
 	gulp.start('js');
@@ -71,7 +72,6 @@ function pugTask(src, logline=false){
 	locals = {
 		strings:options.strings
 	}
-	console.log(locals)
 	return gulp.src(src, {cwd:options.src, base:options.src})
   	.pipe(pug({locals:locals}).on('error', logNotifyErrorHandler))
   	.pipe(gulp.dest(options.dest));
@@ -84,6 +84,11 @@ function copy(src, logline=false){
   	.pipe(gulp.dest(options.dest));
 }
 
+function reloadStrings(recompile=false){
+	stringsFilePath = "./"+options.src+"/strings/"+options.language+".json";
+	options.strings = JSON.parse(fs.readFileSync(stringsFilePath, 'utf8'));
+	if(recompile) gulp.start('pug');
+}
 
 gulp.task('watch', function(){
 	gulp.watch(["src/**/*", "tests/**/*"])
@@ -102,7 +107,7 @@ gulp.task('watch', function(){
 		else if([".pug"].includes(extension)) gulp.start('pug');
 		else if(multimatch(relativePath, options.staticFiles)) copy(relativePath);
 		// if file is a strings file, recompile html sources
-		else if(relativePath.startsWith("strings/")) gulp.start('pug');
+		else if(relativePath.startsWith("strings/")) reloadStrings(true);		
 		// If all fails, notify.
 		else logNotify("[watch] There is no handler for this file: "+relativePath);
 	})
