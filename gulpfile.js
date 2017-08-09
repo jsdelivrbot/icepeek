@@ -22,7 +22,7 @@ var fs = require('fs');
 const options = {
 	src:"src",
 	dest:"client",
-	jsEntry:"scripts/main.js",
+	jsEntry:"scripts/*.js",
 	devmode:true,
 	staticFiles:["*.html", "images/*", "style/*.css", "fonts/**/*"],
 	language:"FR" 
