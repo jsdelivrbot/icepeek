@@ -1,18 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="50px" height="100px" viewBox="0 0 50 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.4.2 (15857) - http://www.bohemiancoding.com/sketch -->
-    <title>Group</title>
+    <title>Page 1 + Page 1</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
+    <defs>
+        <path id="path-1" d="M0,0.224 L49.711,0.224 L49.711,50 L0,50"></path>
+        <path id="path-3" d="M0,0.224 L49.711,0.224 L49.711,50 L0,50"></path>
+    </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="ping1" sketch:type="MSArtboardGroup" transform="translate(-50.000000, -29.000000)">
-            <g id="Group" sketch:type="MSLayerGroup" transform="translate(50.000000, 29.000000)">
-                <g id="Shape" fill="#ECECEC" sketch:type="MSShapeGroup">
-                    <ellipse id="Oval-1" cx="24.8554504" cy="24.8882257" rx="24.8554504" ry="24.8882257"></ellipse>
+        <g id="Page-1-+-Page-1" sketch:type="MSLayerGroup">
+            <g id="Page-1">
+                <g id="Group-3">
+                    <mask id="mask-2" sketch:name="Clip 2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M24.8555,0.2236 C38.5825,0.2236 49.7105,11.3666 49.7105,25.1116 C49.7105,38.8576 38.5825,49.9996 24.8555,49.9996 C11.1275,49.9996 0.0005,38.8576 0.0005,25.1116 C0.0005,11.3666 11.1275,0.2236 24.8555,0.2236" id="Fill-1" fill="#ECECEC" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
                 </g>
-                <ellipse id="Oval-172" stroke="#FFFFFF" stroke-width="2" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="25.1773792" cy="25.3742676" rx="15.1773792" ry="15.3742676"></ellipse>
-                <ellipse id="Oval-173" fill="#EBEBEB" sketch:type="MSShapeGroup" cx="25.399935" cy="19.4570131" rx="4.39993495" ry="4.45701306"></ellipse>
-                <path d="M35,32.1471955 C32.8518504,35.252109 29.2928017,37.2821016 25.2656947,37.2821016 C21.5188118,37.2821016 18.1771144,35.5247917 16,32.7794206 C18.2471023,28.194765 21.7395528,25.2494052 25.6616481,25.2494052 C29.4003533,25.2494052 32.7486532,27.925765 35,32.1471955 Z" id="Oval-172" fill="#EBEBEB" sketch:type="MSShapeGroup"></path>
+                <path d="M25.1777,10.2236 C33.5597,10.2236 40.3557,17.1066 40.3557,25.5976 C40.3557,34.0886 33.5597,40.9716 25.1777,40.9716 C16.7947,40.9716 9.9997,34.0886 9.9997,25.5976 C9.9997,17.1066 16.7947,10.2236 25.1777,10.2236" id="Fill-4" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                <path d="M25.1777,10.2236 C33.5597,10.2236 40.3557,17.1066 40.3557,25.5976 C40.3557,34.0886 33.5597,40.9716 25.1777,40.9716 C16.7947,40.9716 9.9997,34.0886 9.9997,25.5976 C9.9997,17.1066 16.7947,10.2236 25.1777,10.2236 L25.1777,10.2236 Z" id="Stroke-6" stroke="#FFFFFF" stroke-width="2" sketch:type="MSShapeGroup"></path>
+                <path d="M25.4004,15.2236 C27.8304,15.2236 29.7994,17.2196 29.7994,19.6806 C29.7994,22.1416 27.8304,24.1376 25.4004,24.1376 C22.9694,24.1376 21.0004,22.1416 21.0004,19.6806 C21.0004,17.2196 22.9694,15.2236 25.4004,15.2236" id="Fill-8" fill="#ECECEC" sketch:type="MSShapeGroup"></path>
+                <path d="M35,32.3701 C32.852,35.4751 29.293,37.5061 25.266,37.5061 C21.519,37.5061 18.177,35.7491 16,33.0031 C18.247,28.4191 21.74,25.4731 25.662,25.4731 C29.4,25.4731 32.748,28.1491 35,32.3701" id="Fill-10" fill="#ECECEC" sketch:type="MSShapeGroup"></path>
+            </g>
+            <g id="Page-1" transform="translate(0.000000, 50.000000)">
+                <g id="Group-3">
+                    <mask id="mask-4" sketch:name="Clip 2" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M24.8555,0.2236 C38.5825,0.2236 49.7105,11.3676 49.7105,25.1116 C49.7105,38.8576 38.5825,49.9996 24.8555,49.9996 C11.1275,49.9996 0.0005,38.8576 0.0005,25.1116 C0.0005,11.3676 11.1275,0.2236 24.8555,0.2236" id="Fill-1" fill="#F9E81C" sketch:type="MSShapeGroup" mask="url(#mask-4)"></path>
+                </g>
+                <path d="M25.1777,10.2236 C33.5597,10.2236 40.3557,17.1076 40.3557,25.5976 C40.3557,34.0886 33.5597,40.9716 25.1777,40.9716 C16.7947,40.9716 9.9997,34.0886 9.9997,25.5976 C9.9997,17.1076 16.7947,10.2236 25.1777,10.2236" id="Fill-4" fill="#000000" sketch:type="MSShapeGroup"></path>
+                <path d="M25.1777,10.2236 C33.5597,10.2236 40.3557,17.1076 40.3557,25.5976 C40.3557,34.0886 33.5597,40.9716 25.1777,40.9716 C16.7947,40.9716 9.9997,34.0886 9.9997,25.5976 C9.9997,17.1076 16.7947,10.2236 25.1777,10.2236 L25.1777,10.2236 Z" id="Stroke-6" stroke="#000000" stroke-width="2" sketch:type="MSShapeGroup"></path>
+                <path d="M25.4004,15.2236 C27.8304,15.2236 29.7994,17.2186 29.7994,19.6806 C29.7994,22.1426 27.8304,24.1376 25.4004,24.1376 C22.9694,24.1376 21.0004,22.1426 21.0004,19.6806 C21.0004,17.2186 22.9694,15.2236 25.4004,15.2236" id="Fill-8" fill="#F9E81C" sketch:type="MSShapeGroup"></path>
+                <path d="M35,32.3701 C32.852,35.4751 29.293,37.5061 25.266,37.5061 C21.519,37.5061 18.177,35.7491 16,33.0031 C18.247,28.4191 21.74,25.4731 25.662,25.4731 C29.4,25.4731 32.748,28.1491 35,32.3701" id="Fill-10" fill="#F9E81C" sketch:type="MSShapeGroup"></path>
             </g>
         </g>
     </g>

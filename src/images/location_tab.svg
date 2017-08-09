@@ -1,19 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="50px" height="100px" viewBox="0 0 50 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.4.2 (15857) - http://www.bohemiancoding.com/sketch -->
-    <title>Oval 1 + Oval 27 + Oval 25 + Oval 26</title>
+    <title>location_tab + location_tab_active</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="chat2" sketch:type="MSArtboardGroup" transform="translate(-163.000000, -29.000000)">
-            <g id="Oval-1-+-Oval-27-+-Oval-25-+-Oval-26" sketch:type="MSLayerGroup" transform="translate(163.000000, 29.000000)">
-                <ellipse id="Oval-1" fill="#EBEBEB" sketch:type="MSShapeGroup" cx="24.8554504" cy="24.8882257" rx="24.8554504" ry="24.8882257"></ellipse>
-                <g id="Oval-27-+-Oval-25-+-Oval-26" transform="translate(14.062500, 9.375000)" sketch:type="MSShapeGroup">
-                    <ellipse id="Oval-27" stroke="#FFFFFF" stroke-width="2" fill="#EBEBEB" cx="11.5384615" cy="25.1785551" rx="11.5384615" ry="4.50894487"></ellipse>
-                    <g id="Oval-25-+-Oval-26" transform="translate(0.506559, 0.000000)">
-                        <path d="M11.2859578,27.7083592 C13.8009069,27.7083592 22.5719156,17.4325954 22.5719156,11.230282 C22.5719156,5.02796849 17.5190202,0 11.2859578,0 C5.05289542,0 0,5.02796849 0,11.230282 C0,17.4325954 8.77100868,27.7083592 11.2859578,27.7083592 Z" id="Oval-25" fill="#EBEBEB"></path>
-                        <path d="M11.0786165,24.9012157 C13.3063103,24.9012157 21.0755022,15.7991405 21.0755022,10.3052498 C21.0755022,4.81135911 16.599744,0.357680723 11.0786165,0.357680723 C5.55748895,0.357680723 1.08173077,4.81135911 1.08173077,10.3052498 C1.08173077,15.7991405 8.85092261,24.9012157 11.0786165,24.9012157 Z" id="Oval-25" fill="#FFFFFF"></path>
-                        <ellipse id="Oval-26" fill="#EBEBEB" cx="11.1253309" cy="9.23611856" rx="3.4101526" ry="3.39332964"></ellipse>
+        <g id="location_tab-+-location_tab_active" sketch:type="MSLayerGroup">
+            <g id="location_tab" sketch:type="MSShapeGroup">
+                <g id="Oval-1-+-Oval-27-+-Oval-25-+-Oval-26">
+                    <g id="Page-1">
+                        <g id="chat2">
+                            <g id="Oval-1-+-Oval-27-+-Oval-25-+-Oval-26">
+                                <ellipse id="Oval-1" fill="#EBEBEB" cx="24.8554504" cy="24.8882257" rx="24.8554504" ry="24.8882257"></ellipse>
+                                <g id="Oval-27-+-Oval-25-+-Oval-26" transform="translate(14.062500, 9.375000)">
+                                    <ellipse id="Oval-27" stroke="#FFFFFF" stroke-width="2" fill="#EBEBEB" cx="11.5384615" cy="25.1785551" rx="11.5384615" ry="4.50894487"></ellipse>
+                                    <g id="Oval-25-+-Oval-26" transform="translate(0.506559, 0.000000)">
+                                        <path d="M11.2859578,27.7083592 C13.8009069,27.7083592 22.5719156,17.4325954 22.5719156,11.230282 C22.5719156,5.02796849 17.5190202,0 11.2859578,0 C5.05289542,0 0,5.02796849 0,11.230282 C0,17.4325954 8.77100868,27.7083592 11.2859578,27.7083592 L11.2859578,27.7083592 Z" id="Oval-25" fill="#EBEBEB"></path>
+                                        <path d="M11.0786165,24.9012157 C13.3063103,24.9012157 21.0755022,15.7991405 21.0755022,10.3052498 C21.0755022,4.81135911 16.599744,0.357680723 11.0786165,0.357680723 C5.55748895,0.357680723 1.08173077,4.81135911 1.08173077,10.3052498 C1.08173077,15.7991405 8.85092261,24.9012157 11.0786165,24.9012157 L11.0786165,24.9012157 Z" id="Oval-25" fill="#FFFFFF"></path>
+                                        <ellipse id="Oval-26" fill="#EBEBEB" cx="11.1253309" cy="9.23611856" rx="3.4101526" ry="3.39332964"></ellipse>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="location_tab_active" transform="translate(0.000000, 50.000000)" sketch:type="MSShapeGroup">
+                <g id="Oval-1-+-Oval-27-+-Oval-25-+-Oval-26">
+                    <g id="Page-1">
+                        <g id="ping1">
+                            <g id="Oval-1-+-Oval-27-+-Oval-25-+-Oval-26">
+                                <ellipse id="Oval-1" fill="#F8E81C" cx="24.8554504" cy="24.8882257" rx="24.8554504" ry="24.8882257"></ellipse>
+                                <g id="Oval-27-+-Oval-25-+-Oval-26" transform="translate(14.062500, 9.375000)">
+                                    <ellipse id="Oval-27" stroke="#000000" stroke-width="2" fill="#F8E81C" cx="11.5384615" cy="25.1785551" rx="11.5384615" ry="4.50894487"></ellipse>
+                                    <g id="Oval-25-+-Oval-26" transform="translate(0.506559, 0.000000)">
+                                        <path d="M11.2859578,27.7083592 C13.8009069,27.7083592 22.5719156,17.4325954 22.5719156,11.230282 C22.5719156,5.02796849 17.5190202,0 11.2859578,0 C5.05289542,0 0,5.02796849 0,11.230282 C0,17.4325954 8.77100868,27.7083592 11.2859578,27.7083592 L11.2859578,27.7083592 Z" id="Oval-25" fill="#F8E81C"></path>
+                                        <path d="M11.0786165,24.9012157 C13.3063103,24.9012157 21.0755022,15.7991405 21.0755022,10.3052498 C21.0755022,4.81135911 16.599744,0.357680723 11.0786165,0.357680723 C5.55748895,0.357680723 1.08173077,4.81135911 1.08173077,10.3052498 C1.08173077,15.7991405 8.85092261,24.9012157 11.0786165,24.9012157 L11.0786165,24.9012157 Z" id="Oval-25" fill="#000000"></path>
+                                        <ellipse id="Oval-26" fill="#F8E81C" cx="11.1253309" cy="9.23611856" rx="3.4101526" ry="3.39332964"></ellipse>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
                     </g>
                 </g>
             </g>
