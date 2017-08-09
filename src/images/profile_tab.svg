@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15857) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="ping1" sketch:type="MSArtboardGroup" transform="translate(-50.000000, -29.000000)">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(50.000000, 29.000000)">
+                <g id="Shape" fill="#ECECEC" sketch:type="MSShapeGroup">
+                    <ellipse id="Oval-1" cx="24.8554504" cy="24.8882257" rx="24.8554504" ry="24.8882257"></ellipse>
+                </g>
+                <ellipse id="Oval-172" stroke="#FFFFFF" stroke-width="2" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="25.1773792" cy="25.3742676" rx="15.1773792" ry="15.3742676"></ellipse>
+                <ellipse id="Oval-173" fill="#EBEBEB" sketch:type="MSShapeGroup" cx="25.399935" cy="19.4570131" rx="4.39993495" ry="4.45701306"></ellipse>
+                <path d="M35,32.1471955 C32.8518504,35.252109 29.2928017,37.2821016 25.2656947,37.2821016 C21.5188118,37.2821016 18.1771144,35.5247917 16,32.7794206 C18.2471023,28.194765 21.7395528,25.2494052 25.6616481,25.2494052 C29.4003533,25.2494052 32.7486532,27.925765 35,32.1471955 Z" id="Oval-172" fill="#EBEBEB" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
