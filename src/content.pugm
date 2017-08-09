@@ -1,0 +1,18 @@
+extends views/layout.pug
+
+block head
+	link(rel="stylesheet" type="text/css" href="style/menu.css")
+
+block body
+	main
+		include views/menu.pug
+		div(id='profile')
+			h3 Profile
+			p Profile page
+		div(id='location')
+			h3 Location
+			p Location page
+		div(id='chat')
+			h3 Chat
+			p Chat page
+	script(src="scripts/main.js")
