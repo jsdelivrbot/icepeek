@@ -9,4 +9,3 @@ block body
 		a(id="fbConnect" href="page2.html")= strings.fbConnectBtn
 		button(id="pitureSelectBtn") select picture
 	script(src="scripts/main.js")
-	script(src="scripts/truc.js")
