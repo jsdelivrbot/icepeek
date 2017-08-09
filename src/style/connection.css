@@ -1,7 +1,7 @@
 @import url("../fonts/plaster/stylesheet.css");
 
 body{
-    background: url('http://lorempixel.com/output/abstract-q-c-640-480-2.jpg');
+    background-image: url('../images/background.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
