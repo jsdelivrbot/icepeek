@@ -9,7 +9,7 @@
   "scripts": {
     "startServer": "node server/server.js",
     "start": "gulp && npm run cordovaRun",
-    "preinstall":"ln -s node_modules/cordova/bin/cordova cordovaCmd",
+    "preinstall": "ln -s node_modules/cordova/bin/cordova cordovaCmd",
     "cordovaBuild": "(cd cordovaWrap/ && ../cordovaCmd prepare && ../cordovaCmd build android)",
     "cordovaRun": "(cd cordovaWrap/ && ../cordovaCmd prepare && ../cordovaCmd run android)",
     "build": "gulp && npm run cordovaBuild",
@@ -17,7 +17,7 @@
     "clientTest": "mocha tests/client/*.js",
     "serverTest": "mocha tests/server/*.js",
     "deployServer": "npm run serverTest && git push heroku master",
-    "dev": "gulp && heroku local& gulp watch"
+    "dev": "gulp && node server/server.js & gulp watch"
   },
   "author": "Bastien Girschig <bastien.girschig@gmail.com> (http://www.bastiengirschig.fr)",
   "license": "MIT",
