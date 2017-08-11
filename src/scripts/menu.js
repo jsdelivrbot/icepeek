@@ -6,7 +6,7 @@ document.getElementById("chat_tablink").addEventListener("click",evt=>openTab('c
 // keep a reference to these objects:, as they will be
 // frequently needed (every time the user selects a tab)
 let tabcontents = document.getElementsByClassName("tabcontent");
-let tablinks = document.getElementsByClassName("tablinks");
+let tablinks = document.getElementsByClassName("tablink");
 
 function openTab(name){
 	// hide all "tabcontent" elements
