@@ -8,7 +8,7 @@ div.tab{
     text-align: center;
 }
 
-div.tab a img{
+.tablinks{
 	margin: 30px 25px 0px 25px;
 	object-fit: none;
     object-position: 0 0;
@@ -16,6 +16,6 @@ div.tab a img{
     height: 50px;
 }
 
-div.tab a img.active_tab{
+.tablinks.active{
 	object-position: 0 -50px;
 }

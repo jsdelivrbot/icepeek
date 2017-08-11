@@ -4,3 +4,8 @@ body, html{
 	position: absolute;
 	top: 0; left: 0;
 }
+
+/* Hide the tabcontent elements that are not 'open' (should be only one at a time) */
+.tabcontent:not(.open){
+	display: none;
+}
