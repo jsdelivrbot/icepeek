@@ -26,7 +26,7 @@ header{
     justify-content: space-around;
 }
 
-.tablink{
+.tablink img{
     margin: 0 5px;
 	object-fit: none;
     object-position: 0 0;
@@ -34,6 +34,6 @@ header{
     height: 50px;
 }
 
-.tablink.active{
+.tablink.active img{
 	object-position: 0 -50px;
 }
