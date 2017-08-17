@@ -1,29 +1,24 @@
-// Adding eventlisteners to tablinks
+// Add eventlisteners to tablinks
+document.getElementById("profile_tablink").addEventListener("click",evt=>openTab('profile'));
+document.getElementById("location_tablink").addEventListener("click",evt=>openTab('location'));
+document.getElementById("chat_tablink").addEventListener("click",evt=>openTab('chat'));
 
-document.getElementById("profile_tablink").addEventListener("click",function(){openTab(event,'profile_tabcontent')});
-document.getElementById("location_tablink").addEventListener("click",function(){openTab(event,'location_tabcontent')});
-document.getElementById("chat_tablink").addEventListener("click",function(){openTab(event,'chat_tabcontent')});
+// keep a reference to these objects:, as they will be
+// frequently needed (every time the user selects a tab)
+let tabcontents = document.getElementsByClassName("tabcontent");
+let tablinks = document.getElementsByClassName("tablink");
 
-function openTab(evt,tabcontainer){
+function openTab(name){
+	// hide all "tabcontent" elements
+	for (i = 0; i < tabcontents.length; i++) tabcontents[i].classList.remove("open");
 
-// Get all elements with class="tabcontent" and hide them
+	// De-activate all tablinks
+	for (i = 0; i < tablinks.length; i++) tablinks[i].classList.remove("active");
 
-tabcontent = document.getElementsByClassName("tabcontent");
-for (i = 0; i < tabcontent.length; i++) {
-tabcontent[i].style.display = "none";
+	// Show the current tab, and add an "active" class to the button that opened the tab
+	document.getElementById(name+"_tablink").classList.add("active");
+	document.getElementById(name+"_tabcontent").classList.add("open");
 }
 
-// Get all elements with class="tablinks" and remove the class "active"
-tablinks = document.getElementsByClassName("tablinks");
-for (i = 0; i < tablinks.length; i++) {
-tablinks[i].className = tablinks[i].className.replace(" active_tab", "");
-}
-
-// Show the current tab, and add an "active" class to the button that opened the tab
-document.getElementById(tabcontainer).style.display = "block";
-evt.currentTarget.className += " active_tab";
-
-}
-
-// Get the element with id="profile_tabcontent" and click on it to be the Default element displayed
-document.getElementById("location_tablink").click();
+// open "location" tab by default
+openTab("location")

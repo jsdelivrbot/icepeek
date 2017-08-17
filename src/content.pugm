@@ -6,13 +6,14 @@ block head
 block body
 	main
 		include views/menu.pug
-		div(id='profile_tabcontent' class='tabcontent')
-			h3 Profile
-			p Profile page
-		div(id='location_tabcontent' class='tabcontent')
-			h3 Location
-			p Location page
-		div(id='chat_tabcontent' class='tabcontent')
-			h3 Chat
-			p Chat page
+		div(id="content")
+			div(id='profile_tabcontent' class='tabcontent')
+				h3 Profile
+				p Profile page
+			div(id='location_tabcontent' class='tabcontent')
+				h3 Location
+				p Location page
+			div(id='chat_tabcontent' class='tabcontent')
+				h3 Chat
+				p Chat page
 	script(src="scripts/menu.js")
