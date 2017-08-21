@@ -1,3 +1,6 @@
+let monmodule = require("./monmodule")
+console.log(monmodule());
+
 // Add eventlisteners to tablinks
 document.getElementById("profile_tablink").addEventListener("click",evt=>openTab('profile'));
 document.getElementById("location_tablink").addEventListener("click",evt=>openTab('location'));
